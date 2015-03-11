@@ -1,26 +1,89 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Static file demo app</title>
+    <title>GoDiego.io</title>
+    <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style>
+    body {
+      padding-top: 70px;
+      padding-bottom: 30px;
+    }
+
+    .theme-dropdown .dropdown-menu {
+      position: static;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .theme-showcase > p > .btn {
+      margin: 5px 0;
+    }
+
+    .theme-showcase .navbar .container {
+      width: auto;
+    }
+    .ribbon {
+        top: 3.2em;
+        right: -3.7em;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        color:#fff;
+        display: block;
+        padding: .6em 3.5em;
+        position: fixed;
+        text-align: center;
+        text-decoration: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        z-index: 99999;
+    }
+    .bg-green {
+      background-color: #218F2E; }
+    </style>
   </head>
   <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1OkmVTFhfLY" frameborder="0" allowfullscreen></iframe>
+    <!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Diego: The Next-Generation Scheduler for CloudFoundry</a>
+    </div>
 
-    <p>
-      https://drive.google.com/file/d/0BzowTjPNRrlzeHoyeTFoUWlla2M/edit
+  </div>
+</nav>
+  <a href="https://github.com/cloudfoundry/cloud_controller_ng" class="ribbon bg-green">Fork me on GitHub</a>
 
-      https://github.com/cloudfoundry-incubator/diego-design-notes
+    <div class="container">
+    <h1>Diego: The Container Placement engine with a Reverse-Auction Scheduler</h1>
+    <!-- 16:9 aspect ratio -->
+    <h2>An Overview</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/1OkmVTFhfLY"></iframe>
+    </div>
 
-      http://blog.pivotal.io/cloud-foundry-pivotal/products/app-placement-in-cloud-foundry-diego-a-classical-optimization-problem
-
-      https://github.com/pivotal-cf-experimental/lattice
-
-      https://www.pivotaltracker.com/n/projects/1003146
-
-      https://github.com/cloudfoundry-incubator/diego-release
-
-      Simulator: https://github.com/cloudfoundry-incubator/auction/tree/master/simulation
-
-    </p>
+    <h2>How does it work?</h2>
 
     <map name="GraffleExport">
   <area shape=rect coords="671,501,751,556" href="https://github.com/coreos/etcd">
@@ -55,7 +118,34 @@
 </map>
 <img border=0 src="https://raw.githubusercontent.com/cloudfoundry-incubator/diego-design-notes/master/diego-overview.png" usemap="#GraffleExport">
 
+<h2>Some more details</h2>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe  class="embed-responsive-item" src="https://drive.google.com/file/d/0BzowTjPNRrlzeHoyeTFoUWlla2M/preview"></iframe>
+</div>
 
+<ul>
+  <li>https://drive.google.com/file/d/0BzowTjPNRrlzeHoyeTFoUWlla2M/edit</li>
+
+  <li>https://github.com/cloudfoundry-incubator/diego-design-notes</li>
+
+    <li>http://blog.pivotal.io/cloud-foundry-pivotal/products/app-placement-in-cloud-foundry-diego-a-classical-optimization-problem</li>
+
+      <li>https://github.com/pivotal-cf-experimental/lattice</li>
+
+        <li>https://www.pivotaltracker.com/n/projects/1003146</li>
+
+          <li>https://github.com/cloudfoundry-incubator/diego-release</li>
+
+            <li>Simulator: https://github.com/cloudfoundry-incubator/auction/tree/master/simulation</li>
+
+</ul>
+
+<h2>Who built it?</h2>
     <img src="https://pbs.twimg.com/profile_images/1805442109/image.jpg"/>
-  </body>
+
+<h2>How do I try it out?</h2>
+<p>Try <a href="https://docs.google.com/a/pivotal.io/document/d/1WWoQ_d5nR4-P6VfLbAAbzOZIvRj-Xdff2hsjM_ZWRUQ/edit?pli=1#heading=h.2vko512vurgn">Lattice</a>
+
+</div>
+    </body>
 </html>
